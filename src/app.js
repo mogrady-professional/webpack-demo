@@ -1,0 +1,15 @@
+import './routing/hash-router';
+import './components/header';
+import './components/footer';
+import './pages/about';
+import './pages/contact';
+import './pages/home';
+import './pages/analytics';
+import './pages/request-quote';
+import './pages/services';
+import './pages/skills';
+import './pages/portfolio';
+import './api/document';
+import './api/navigator';
+import './api/window';
+import './styles/styles.css';
