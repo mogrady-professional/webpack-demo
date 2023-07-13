@@ -1,33 +1,3 @@
-# My .gitignore file
-project_structure.txt 
-# dist
-#
-/templates/skills.html
-/templates/services.html
-/templates/request-quote.html
-/templates/portfolio.html 
-/templates/education.html
-/templates/analytics.html
-/templates/my-about.html
-/templates/my-contact.html
-/templates/my-home.html
-
-
-/src/api
-index-mine.html
-/src/pages/analytics.js
-/src/pages/education.js 
-/src/pages/portfolio.js
-/src/pages/request-quote.js
-/src/pages/services.js
-/src/pages/skills.js
-/src/pages/index.js 
-/src/assets/images/other
-/src/assets/images/pages
-my-README.md
-my-webpack.config.js
-#
-
 # Logs
 logs
 *.log
@@ -119,7 +89,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-#dist
+dist
 
 # Gatsby files
 .cache/
