@@ -51,38 +51,8 @@ module.exports = {
       chunks: ['bundle'],
     }),
     new HtmlWebpackPlugin({
-      template: './templates/education.html',
-      filename: 'templates/education.html',
-      chunks: ['bundle'],
-    }),
-    new HtmlWebpackPlugin({
-      template: './templates/skills.html',
-      filename: 'templates/skills.html',
-      chunks: ['bundle'],
-    }),
-    new HtmlWebpackPlugin({
-      template: './templates/services.html',
-      filename: 'templates/services.html',
-      chunks: ['bundle'],
-    }),
-    new HtmlWebpackPlugin({
-      template: './templates/portfolio.html',
-      filename: 'templates/portfolio.html',
-      chunks: ['bundle'],
-    }),
-    new HtmlWebpackPlugin({
       template: './templates/contact.html',
       filename: 'templates/contact.html',
-      chunks: ['bundle'],
-    }),
-    new HtmlWebpackPlugin({
-      template: './templates/request-quote.html',
-      filename: 'templates/request-quote.html',
-      chunks: ['bundle'],
-    }),
-    new HtmlWebpackPlugin({
-      template: './templates/analytics.html',
-      filename: 'templates/analytics.html',
       chunks: ['bundle'],
     }),
     new HtmlWebpackPlugin({
@@ -95,7 +65,9 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
     compress: true,
     port: 9000,
     historyApiFallback: true,
